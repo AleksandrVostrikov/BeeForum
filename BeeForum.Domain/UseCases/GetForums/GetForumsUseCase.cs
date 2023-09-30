@@ -13,10 +13,10 @@ namespace BeeForum.Domain.UseCases.GetForums
         {
             _beeForumDbContext = beeForumDbContext;
         }
-        public async Task<IEnumerable<DomainForum>> ExecuteAsync(CancellationToken cancellationToken)
+        public async Task<IEnumerable<Forum>> ExecuteAsync(CancellationToken cancellationToken)
         {
             return await _beeForumDbContext.Forums
-                .Select(f => new DomainForum
+                .Select(f => new Forum
                 {
                     Id = f.Id,
                     Title = f.Title

@@ -4,6 +4,6 @@ namespace BeeForum.Domain.UseCases.GetForum
 {
     public interface IGetForumsUseCase
     {
-        Task<IEnumerable<DomainForum>> ExecuteAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<Forum>> ExecuteAsync(CancellationToken cancellationToken);
     }
 }

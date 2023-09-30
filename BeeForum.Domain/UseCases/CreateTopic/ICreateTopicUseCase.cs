@@ -4,6 +4,6 @@ namespace BeeForum.Domain.UseCases.CreateTopic
 {
     public interface ICreateTopicUseCase
     {
-        Task<DomainTopic> Execute(Guid forumId, string title, Guid authorId, CancellationToken cancellationToken);
+        Task<Topic> Execute(Guid forumId, string title, Guid authorId, CancellationToken cancellationToken);
     }
 }
